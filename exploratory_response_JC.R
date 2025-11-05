@@ -1,4 +1,5 @@
-setwd("C:/DATA/Nigeria/EiA")
+#setwd("C:/DATA/Nigeria/EiA")
+setwd("C:/Github/chamb244/EiA2030-ex-ante/Nigeria_response_uncertainty")
 
 library(leaflet)
 library(geodata)
@@ -45,10 +46,10 @@ plot(s, add=TRUE, pch=20, col="Red")
 # bring in raster layers for prediction
 #source("Nigeria_raster_stack.R") 
 # # or just get the output from that script:
-rain      <- rast(paste(getwd(),"rain","Nigeria_rain_summaries.tif", sep="/"))
-rain.30as <- rast(paste(getwd(),"rain","Nigeria_rain_summaries_30as.tif", sep="/"))
-soil      <- rast(paste(getwd(), "soil_af_isda", "Nigeria_soil_layers.tif", sep="/"))
-soil.30as <- rast(paste(getwd(), "soil_af_isda", "Nigeria_soil_layers_30as.tif", sep="/"))
+rain      <- rast(paste(getwd(), "Nigeria_rain_summaries.tif", sep="/"))
+rain.30as <- rast(paste(getwd(), "Nigeria_rain_summaries_30as.tif", sep="/"))
+soil      <- rast(paste(getwd(), "Nigeria_soil_layers.tif", sep="/"))
+soil.30as <- rast(paste(getwd(), "Nigeria_soil_layers_30as.tif", sep="/"))
 
 
 
